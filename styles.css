@@ -1,0 +1,124 @@
+.header {
+
+    background-color: #35fdfd;
+    padding: 20px;
+    margin-bottom: 3px;
+    width: 100%;
+    /* height: 100px; */
+
+}
+.sidebar {
+    /* background-color: rgb(250, 216, 175); */
+    background: linear-gradient(to right, #53ffff, #ffffff);
+    width: 25%;
+    padding: 20px;
+    left: 50;
+    border-right: 1px solid rgb(255, 255, 255);
+    border-left: 2px;
+  }
+
+  .content {
+    background: linear-gradient(to bottom, #53ffff, #ffffff);
+    width: 75%;
+    height: 100%;
+    /* margin-left: 5px;  */
+    border-left: 1px solid rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px 0px 0px 10px;
+
+  }
+
+  .topic {
+    background-color: aqua;
+    border-radius: 10px;
+    color: black;
+  }
+ p {
+  font-size: 18px;
+ }
+/* ul {
+    list-style-type: none; 
+    padding: 0;
+    color: #15ff00;
+}
+li {
+    margin: 10px 0;
+    padding: 10px; 
+    border: 1px solid #ccc;
+    color: #000;
+} */
+.nav-link {
+  color: rgb(0, 0, 0); 
+  text-decoration: none; 
+  font-size: 20px
+}
+
+/* Color on hover */
+.nav-link:hover {
+  color: rgb(255, 255, 255); 
+  font-size: 20px
+}
+
+
+.nav-link:active,
+.nav-link:visited {
+  color: darkred; 
+}
+
+img {
+  width: 100%;
+  max-width: 90%; 
+  height: auto; 
+  border-radius: 10px; 
+  border: 2px solid #ffffff; 
+  box-shadow: 10px 4px 8px rgba(255, 255, 255, 0.4); 
+  display: block;
+  margin: 20px auto;
+}
+
+
+.login-body {
+  font-family: Arial, sans-serif;
+  /* background-color: #f3f3f3; */
+  background: linear-gradient(to bottom, #53ffff, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.login-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.login-container h2 {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-container input {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #35fdfd;
+  color: rgb(34, 34, 34);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.login-container button:hover {
+  background-color: #0ec4f1;
+}
+.error-message {
+  color: red;
+  margin-top: 10px;
+}

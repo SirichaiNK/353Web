@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body class="login-body">
+
+<div class="login-container">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p id="error-message" class="error-message"></p>
+</div>
+
+<script>
+    const users = [
+        { username: "admin", password: "Pa$$w0rd" },
+        { username: "sirichai", password: "6410110503" },
+        { username: "user1", password: "12345678" }
+    ];
+
+    function login() {
+
+        const username = document.getElementById("username").value;
+        const passwordInput = document.getElementById("password");
+        const password = passwordInput.value;
+
+        
+        const user = users.find(u => u.username === username && u.password === password);
+
+        if (user) {
+            //alert("Login successful!");
+            // Redirect to another page or perform any other action here
+            window.location.href = "main.html";
+        } else {
+            passwordInput.value = "";
+            document.getElementById("error-message").textContent = "Invalid username or password!";
+            
+        }
+    }
+</script>
+
+</body>
+</html>
